@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>ColorPicker</title>
+  </head>
+  <body>
+    <main id="header">
+      <input type="color" id="seedPicker" class="values" value="#ffffff" />
+      <select name="selectList" id="selectList" class="values">
+        <option value="monochrome">Monochrome</option>
+        <option value="monochrome-dark">Monochrome-dark</option>
+        <option value="monochrome-light">Monochrome-light</option>
+        <option value="analogic">Analogic</option>
+        <option value="complement">Complement</option>
+        <option value="analogic-complement">Analogic-complement</option>
+        <option value="triad">Triad</option>
+      </select>
+      <button id="getButton">Generate scheme</button>
+      <button id="randomButton">Random scheme</button>
+    </main>
+    <section id="colors">
+      <div id="currentValues"></div>
+      <div id="copiedEl"></div>
+
+      <div class="schemeItem">
+        <h1 class="hexHeading"></h1>
+      </div>
+      <div class="schemeItem">
+        <h1 class="hexHeading"></h1>
+      </div>
+      <div class="schemeItem">
+        <h1 class="hexHeading"></h1>
+      </div>
+      <div class="schemeItem">
+        <h1 class="hexHeading"></h1>
+      </div>
+      <div class="schemeItem">
+        <h1 class="hexHeading"></h1>
+      </div>
+    </section>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
